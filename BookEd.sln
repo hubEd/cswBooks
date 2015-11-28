@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L0.Data", "L0.Data", "{BDF01D2A-33A5-4BEA-9FA5-D00AE879B694}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L1.Transfer", "L1.Transfer", "{42C544B1-69D6-4367-A7CA-D6C7BF3A46E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L2.Logic", "L2.Logic", "{0F2ADBA4-73F2-4852-8965-05E2A7E53C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookEd.Transfer", "BookEd.Transfer\BookEd.Transfer.csproj", "{9B8890BF-A467-44BA-B721-BE0F2037B3A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booked.Logic", "Booked.Logic\Booked.Logic.csproj", "{F1805123-FF5D-48F2-B005-8C86C1735724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookEd.Web.KO", "BookEd.Web\BookEd.Web.KO.csproj", "{151B1F1B-ACD8-44F0-A993-70BA304932A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Data", "Book.Data\Book.Data.csproj", "{3039B7CA-B2A1-417E-A6EE-B6809E21D5EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8BD4C9A8-8EB0-4858-ADED-382DD0D7286E}"
+	ProjectSection(SolutionItems) = preProject
+		cswBooks.sql = cswBooks.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B8890BF-A467-44BA-B721-BE0F2037B3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8890BF-A467-44BA-B721-BE0F2037B3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8890BF-A467-44BA-B721-BE0F2037B3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8890BF-A467-44BA-B721-BE0F2037B3A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1805123-FF5D-48F2-B005-8C86C1735724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1805123-FF5D-48F2-B005-8C86C1735724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1805123-FF5D-48F2-B005-8C86C1735724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1805123-FF5D-48F2-B005-8C86C1735724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{151B1F1B-ACD8-44F0-A993-70BA304932A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{151B1F1B-ACD8-44F0-A993-70BA304932A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{151B1F1B-ACD8-44F0-A993-70BA304932A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{151B1F1B-ACD8-44F0-A993-70BA304932A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3039B7CA-B2A1-417E-A6EE-B6809E21D5EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3039B7CA-B2A1-417E-A6EE-B6809E21D5EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3039B7CA-B2A1-417E-A6EE-B6809E21D5EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3039B7CA-B2A1-417E-A6EE-B6809E21D5EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B8890BF-A467-44BA-B721-BE0F2037B3A9} = {42C544B1-69D6-4367-A7CA-D6C7BF3A46E6}
+		{F1805123-FF5D-48F2-B005-8C86C1735724} = {0F2ADBA4-73F2-4852-8965-05E2A7E53C39}
+		{3039B7CA-B2A1-417E-A6EE-B6809E21D5EE} = {BDF01D2A-33A5-4BEA-9FA5-D00AE879B694}
+	EndGlobalSection
+EndGlobal

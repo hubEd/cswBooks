@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<br/>
+<div class="row">
+    <div class="col-md-4" style="display:inline-block; float:none; vertical-align: middle">
+        <h1>MY BOOKS:</h1>
+    </div><!--
+    --><div class="col-md-8" style="display:inline-block; float:none; vertical-align: middle" >
+        <form class="form-inline">
+            <div class="form-group">
+                <label>Author:</label>
+                <select class="filter" data-bind="options: authors,  optionsText: function (item) { return item.Name }, value: authorFilter"></select>
+            </div>
+            <div class="form-group" >
+                <label>Category:</label>
+                <select class="filter" data-bind="options: categories,  optionsText: function (item) { return item.Name }, value: categoryFilter"></select>
+            </div>
+            <button data-bind="click: showBooks" class="btn btn-primary btn-sm">Show</button>
+        </form>
+    </div>
+
+</div>
+
+<div class="row ">
+    <blockquote data-bind="text: quote">
+    </blockquote>
+</div>
+
+<br />
+<div class="row">
+    <table class="table table-condensed table-hover">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AUTHOR</th>
+                <th>GENDER</th>
+                <th>PAGES</th>             
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ko foreach: books -->
+            <tr>
+                <td data-bind="text: Name"></td>
+                <td data-bind="text: Author.Name"></td>
+                <td data-bind="text: Category.Name"></td>
+                <td data-bind="text: Pages"></td>
+            </tr>              
+            <!--/ko-->
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h3>New Book:</h3>
+
+<form >
+    <div class="form-group">
+        <div class="form-group">
+            <label for="test">Name:</label>
+            <input type="text" data-bind="value: bookName" class="form-control" placeholder="CSW Book" required>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Author:</label>
+            <select class="form-control" data-bind="options: authorsAdd,  
+                                                    optionsText: function (item) { return item.Name }, 
+                                                    value: authorAdd">             
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Category:</label>
+            <select class="form-control"data-bind="options: categoriesAdd,  
+                                                    optionsText: function (item) { return item.Name }, 
+                                                    value: categoryAdd"> 
+            </select>
+        </div>
+       
+        <button class="btn btn-success" data-bind="click: addBook">Save</button>
+    </div>
+</form>
+
